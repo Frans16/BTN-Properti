@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+
 public class HelperClass {
 	
 	private static HelperClass helperClass;
@@ -43,7 +44,7 @@ public class HelperClass {
     }
        
     public static void tearDown() {
-            
+    	
         if(driver!=null) {
              driver.close();
              driver.quit();
@@ -51,5 +52,4 @@ public class HelperClass {
             
        helperClass = null;
    } 
-
 }

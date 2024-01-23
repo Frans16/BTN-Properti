@@ -8,11 +8,12 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = "src\\test\\resource\\btnproperti.feature", 
+		tags = "",
 		glue = "org.btn.definitions",
-		tags = "@positiveCase",
-		plugin = {}
-		)
+		plugin = {"html:target/cucumber-reports/testResult.html"},
+		monochrome = true
+	)
 
 public class Runner {
-
+	
 }
